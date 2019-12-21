@@ -1,0 +1,64 @@
+package com.company;
+
+public class BankAccount {
+  private   String accountId;
+  private   double Balance;
+
+    public BankAccount() {
+        accountId = "";
+        Balance = 0;
+
+    }
+
+    public BankAccount(String accountId ,double Balance) {
+        this.Balance = Balance;
+    }
+
+    public void setAccountId(String accountId) {
+        accountId = accountId;
+    }
+
+    public void setBalance(Double balance) {
+        Balance = balance;
+    }
+
+    public String getaccountId() {
+        return accountId;
+    }
+
+    public double getBalance() {
+        return Balance;
+    }
+
+    public void withdraw(double amount) {
+        double NewBalance = Balance - amount;
+        Balance = NewBalance;
+    }
+
+    public void deposit(double amount) {
+        double NewBalance = Balance + amount;
+        Balance = NewBalance;
+
+    }
+
+}
+
+**********************************************
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        BankAccount First =new BankAccount("2222222",2000.0);
+
+
+
+
+
+
+    }
+
+}
